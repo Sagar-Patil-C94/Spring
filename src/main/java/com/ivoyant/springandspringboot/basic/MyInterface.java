@@ -1,4 +1,4 @@
-package com.ivoyant.springandspringboot;
+package com.ivoyant.springandspringboot.basic;
 
 import org.springframework.stereotype.Component;
 
