@@ -1,8 +1,8 @@
 package com.ivoyant.springandspringboot.basic;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public interface MyInterface {
     String greetings();
 }
