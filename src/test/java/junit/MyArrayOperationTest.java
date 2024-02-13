@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
 public class MyArrayOperationTest {
     private static MyArrayOperation myArrayOperation;
     private static Logger logger = LoggerFactory.getLogger(MyArrayOperationTest.class);
