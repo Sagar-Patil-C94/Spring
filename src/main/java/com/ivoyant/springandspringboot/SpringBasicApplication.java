@@ -1,16 +1,14 @@
 package com.ivoyant.springandspringboot;
 
 import com.ivoyant.springandspringboot.basic.ClassImpl;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan("com.ivoyant.springandspringboot")
+@SpringBootApplication
 public class SpringBasicApplication {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringBasicApplication.class);
+        ApplicationContext applicationContext = SpringApplication.run(SpringBasicApplication.class, args);
         ClassImpl classImpl = applicationContext.getBean(ClassImpl.class);
         ClassImpl classImpl1 = applicationContext.getBean(ClassImpl.class);
         System.out.println(classImpl);
